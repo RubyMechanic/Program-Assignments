@@ -1,5 +1,3 @@
-print("hello world")
-word1="Hello"
-word2= "World"
-print(word1+ " "+word2)
+print("hello world") #hello world Hello World rubymechanic@Rubys-MacBook-Pro Program-Assignments % 
+
 
