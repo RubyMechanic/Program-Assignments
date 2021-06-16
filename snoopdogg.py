@@ -1,7 +1,7 @@
-name = "Snoop Dogg"
-height = "6'5"
-platinum = 7
-salary = 0.68
+name = "Snoop Dogg"#str
+height = "6'5"#str
+platinum = 7#int
+salary = 0.68#float
 print(name+" is "+ height + " and has ")
 print(platinum)
 print("platinum records")
