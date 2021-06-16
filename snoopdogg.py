@@ -5,4 +5,6 @@ salary = 0.68
 print(name+" is "+ height + " and has ")
 print(platinum)
 print("platinum records")
-print(name + " makes" + salary +" dollars per second")
+print(name + " makes")
+print(salary)
+print(" dollars per second")
