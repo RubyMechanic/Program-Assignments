@@ -1,3 +1,4 @@
+import numpy as np
 food_prices = {"chicken":1.59, "beef":1.99, "cheese":1.00, "milk":2.50}
 NBA_players = {"Lebron James": 23, "Kevin Durant":35, "Stephen Curry":30, "Damian Lillard":0}
 
@@ -19,14 +20,24 @@ print(milk_price)
 
 def total_price(itemone, itemtwo):
     price = food_prices[itemone]+food_prices[itemtwo]
-    print("The total price of chicken and cheese is ")
-    print(price)
-    
+    print("The total price of " + str(itemone) + " and " + str(itemtwo) +  " is " + str(price))
+    price *= 1.0925
+    print("With tax that will be " + str(price))
+  
+def primeFinder(max): 
+    for i in range(2,max):
+        for j in range(2,i):
+            if i % j == 0:
+                break
+        else:
+            print(i)
+    return(max) 
+
+primeFinder(100)
 
 def price_difference(oneitem, otheritem):
     price = food_prices[oneitem] - food_prices[otheritem]
-    print("the difference between the prices of chicken and cheese is ")
-    print(price)
+    print("the difference between the prices of " +str(oneitem) + " and " +str(otheritem) + " is " + str(price))
 
 NBA_players["Lebron James"] = 6
 lebron_number = NBA_players["Lebron James"]
@@ -45,7 +56,7 @@ restock("Jordan 13", 20)
 restock("Foamposite", 3)
 restock("AirMax", 6)
 restock("SB Dunk", 2)
-price_difference("chicken", "cheese")
+price_difference( "chicken", "cheese")
 total_price("chicken", "cheese")
 def destock(shoe, x):
     if shoes[shoe]>30:
